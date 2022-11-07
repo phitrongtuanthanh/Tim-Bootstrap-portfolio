@@ -1,0 +1,142 @@
+/* Text */
+:root {
+  --primary-color: #171614;
+  --secondary-color: #3A2618;
+  --third-color: #754043;
+  --highlight: #37423D;
+  --font: #9A8873;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; 
+  background-color: var(--secondary-color);
+}
+
+h1, h2, h3 , h4, h5, h6 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif , sans-serif;
+    color: var(--font);
+  }
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif , sans-serif;
+    color: var(--font);
+    font-size: larger;
+  }
+
+ul, a {
+  color: var(--font);
+}
+
+.btn {
+  background: #9A8873;
+  border: #9A8873;
+}
+
+.btn:hover {
+  background: #171614;
+  border: #171614;
+}
+
+.fas, .far {
+  color: #9A8873;
+}
+
+/* General */
+.pfNav {
+  position: fixed;
+  width: 100%;
+  background: url("../images/transparency.png");
+  background-color: var(--third-color) !important;
+  background-size: cover;
+  z-index: 10;
+}
+
+.navbar-brand h3 {
+  display: inline-block;
+  color: var(--font);
+  font-size: 40px;
+}
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 0 !important;
+}
+
+.nav-item {
+    margin: 0px 15px;
+}
+
+.nav-item .nav-link {
+  color: var(--font) !important;
+  font-size: larger;
+  font-stretch: wider !important;
+}
+
+.nav-item .nav-link:hover {
+  color: #171614 !important;
+}
+.jumbotron {
+  background-color: var(--highlight);
+}
+
+.jumbotron .row {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.jumbotron .row img {
+    display: flex;
+    align-self: center;
+}
+
+.intro p, .skilllist ul {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.intro p {
+  color: var(--primary-color) !important;
+}
+
+.cardsection {
+  margin: 0 8px 0 8px;
+  transition: transform 1s;
+}
+
+.cardContainer:hover {
+  transform: scale(1.2);
+  }
+
+.cardContainer .card, .card-body {
+  border-color: var(--primary-color);
+  border-width: 2px;
+  background-color: var(--highlight);
+}
+
+.card-body {
+  height: 200px;
+}
+
+.card-body p {
+  color: var(--primary-color);
+}
+
+.position { 
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.findme {
+  background: var(--highlight);
+
+}
+footer {
+  background-color: var(--third-color) !important;
+}
